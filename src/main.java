@@ -8,11 +8,11 @@ public class Main {
 
         t1.start();
         try {
-            t1.join(); // Wait for counterUp to finish
+            t1.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        t2.start(); // Start counterDown after counterUp completes
+        t2.start();
     }
 }
